@@ -27,7 +27,7 @@ SHORT_DESCRIPTION = "SHORT DESCRIPTION"
 
 args = {
     "owner": OWNER,
-    "start_date": pendulum.datetime(2026, 3, 24, tz="Europe/Moscow"),
+    "start_date": pendulum.datetime(2026, 3, 24, tz="Asia/Almaty"),
     "catchup": True,
     "retries": 3,
     "retry_delay": pendulum.duration(hours=1),
@@ -72,7 +72,7 @@ def get_and_transfer_api_data_to_s3(**context):
     )
 
     con.close()
-    logging.info(f"✅ Download for date success: {start_date}")
+    logging.info(f"Download for date success: {start_date}")
 
 
 with DAG(
