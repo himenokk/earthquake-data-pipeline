@@ -11,7 +11,7 @@ build/
 
 # Airflow
 logs/
-
+config/airflow.cfg
 # MinIO / application data
 data/
 
