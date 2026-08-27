@@ -31,7 +31,7 @@ args = {
     "catchup": True,
     "retries": 3,
     "retry_delay": pendulum.duration(hours=1),
-}
+} 
 
 
 def get_dates(**context) -> tuple[str, str]:
@@ -46,7 +46,7 @@ def get_and_transfer_api_data_to_s3(**context):
     """"""
 
     start_date, end_date = get_dates(**context)
-    logging.info(f"💻 Start load for dates: {start_date}/{end_date}")
+    logging.info(f"💻 вфыStart load for dates: {start_date}/{end_date}")
     con = duckdb.connect()
 
     con.sql(

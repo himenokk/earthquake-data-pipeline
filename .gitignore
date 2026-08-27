@@ -9,13 +9,11 @@ venv/
 dist/
 build/
 
-# Airflow
+
 logs/
 config/airflow.cfg
-# MinIO / application data
 data/
 
-# PyCharm
 .idea/
 
 # Python
@@ -23,11 +21,7 @@ __pycache__/
 *.pyc
 .venv/
 venv/
-
-# Environment variables / secrets
-.env
-.env.*
-
+cred.py
 # OS
 .DS_Store
 Thumbs.db
